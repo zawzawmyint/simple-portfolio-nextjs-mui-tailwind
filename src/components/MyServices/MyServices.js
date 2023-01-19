@@ -18,7 +18,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const MyServices = () => {
   return (
     <Box className="bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 p-10">
-      <Container maxWidth="md" className="">
+      <Container maxWidth="lg" className="">
         <Typography variant="h5" className=" font-bold text-cyan-100">
           My Services
         </Typography>
@@ -26,7 +26,7 @@ const MyServices = () => {
           <Grid
             item
             xs={6}
-            md={4}
+            md={3}
             className="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"
           >
             <Item>
@@ -48,7 +48,7 @@ const MyServices = () => {
           <Grid
             item
             xs={6}
-            md={4}
+            md={3}
             className="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"
           >
             <Item>
@@ -71,7 +71,7 @@ const MyServices = () => {
           <Grid
             item
             xs={6}
-            md={4}
+            md={3}
             className="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"
           >
             <Item>
@@ -88,6 +88,29 @@ const MyServices = () => {
                 className=" font-bold mt-2 text-slate-600"
               >
                 UI/UX Design
+              </Typography>
+            </Item>
+          </Grid>
+          <Grid
+            item
+            xs={6}
+            md={3}
+            className="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"
+          >
+            <Item>
+              {" "}
+              <Image
+                src={uiuxdesign}
+                alt="Picture of the author"
+                width={200}
+                height={200}
+                className=" mx-auto ease-in duration-300 hover:animate-pulse "
+              />
+              <Typography
+                variant="body1"
+                className=" font-bold mt-2 text-slate-600"
+              >
+                Graphic Design
               </Typography>
             </Item>
           </Grid>

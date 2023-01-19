@@ -8,7 +8,6 @@ import { useTheme } from "@mui/material/styles";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import Link from "next/link";
 
 import { RxCross1 } from "react-icons/rx";
@@ -34,36 +33,42 @@ export const Header = () => {
     <Box className=" bg-black " sx={{ color: "white" }}>
       {!fullScreen && (
         <Stack
-          mx={20}
+          mx={10}
           p={3}
           direction="row"
-          spacing={65}
+          spacing={75}
           // className="hidden sm:flex"
         >
           <Typography
             variant="subtitle2"
             className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600"
           >
-            Portfolio
+            <Link href={"/"}>Portfolio</Link>
           </Typography>
           <Stack direction="row" spacing={3} className=" hidden sm:flex">
             <Typography
               variant="subtitle2"
               className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black"
             >
-              About Me
+              <Link href={"/"}>Home</Link>
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black"
+            >
+              <Link href={"/about"}>About Me</Link>
             </Typography>
             <Typography
               variant="subtitle2"
               className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black"
             >
-              Skills
+              <Link href={"/skills"}>Skills</Link>
             </Typography>
             <Typography
               variant="subtitle2"
               className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black"
             >
-              My Work
+              <Link href={"/mywork"}>My Work</Link>
             </Typography>
           </Stack>
         </Stack>
@@ -74,16 +79,16 @@ export const Header = () => {
       {fullScreen && (
         <Stack
           ml={5}
-          p={3}
+          py={3}
           direction="row"
-          spacing={22}
+          spacing={25}
           className="sm:hidden flex justify-center items-center"
         >
           <Typography
             variant="subtitle2"
             className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600"
           >
-            Portfolio
+            <Link href="/">Portfolio</Link>
           </Typography>
           <SlMenu
             fontSize="30px"
@@ -130,7 +135,7 @@ export const Header = () => {
                       onClick={handleClose}
                       className="justify-center"
                     >
-                      <Link href="/">About me</Link>
+                      <Link href="/about">About me</Link>
                     </ListItemButton>
                   </ListItem>
                   <ListItem>
@@ -138,7 +143,7 @@ export const Header = () => {
                       onClick={handleClose}
                       className="justify-center"
                     >
-                      <Link href="/">Skills</Link>
+                      <Link href="/skills">Skills</Link>
                     </ListItemButton>
                   </ListItem>
                   <ListItem>
@@ -146,7 +151,7 @@ export const Header = () => {
                       onClick={handleClose}
                       className="justify-center"
                     >
-                      <Link href="/">My Work</Link>
+                      <Link href="/mywork">My Work</Link>
                     </ListItemButton>
                   </ListItem>
                 </List>

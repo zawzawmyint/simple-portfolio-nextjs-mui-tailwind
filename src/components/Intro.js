@@ -10,7 +10,7 @@ import { FaDev } from "react-icons/fa";
 
 const Intro = () => {
   return (
-    <Box className=" bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 text-black h-auto sm:p-20">
+    <Box className=" bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 text-black h-auto py-10 sm:p-10">
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Box className=" flex flex-col gap-2 sm:mx-32 mx-20  my-10">
@@ -55,24 +55,24 @@ const Intro = () => {
             <Stack direction="row" spacing={3} mt={1}>
               <GoMarkGithub
                 fontSize="30px"
-                className=" text-sky-300 bg-black rounded-full animate-spin "
+                className=" text-sky-300 bg-black rounded-full hover:animate-bounce"
               />
               <TiSocialLinkedinCircular
                 fontSize="30px"
-                className=" text-sky-300 bg-black rounded-full animate-spin"
+                className=" text-sky-300 bg-black rounded-full hover:animate-bounce"
               />
               <AiFillTwitterCircle
                 fontSize="30px"
-                className=" text-sky-300 bg-black rounded-full animate-spin"
+                className=" text-sky-300 bg-black rounded-full hover:animate-bounce"
               />
 
               <RiInstagramFill
                 fontSize="30px"
-                className=" text-sky-300 bg-black rounded-full animate-spin"
+                className=" text-sky-300 bg-black rounded-full hover:animate-bounce"
               />
               <FaDev
                 fontSize="30px"
-                className=" text-sky-300 bg-black animate-spin rounded-full"
+                className=" text-sky-300 bg-black hover:animate-bounce rounded-full"
               />
             </Stack>
           </Box>
@@ -87,7 +87,7 @@ const Intro = () => {
               alt="Picture of the author"
               width={300}
               height={300}
-              className=" mx-auto rounded-full  transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"
+              className=" mx-auto rounded-full  transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300"
             />
           </Box>
         </Grid>
