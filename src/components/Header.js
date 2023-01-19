@@ -3,12 +3,16 @@ import React from "react";
 import { SlMenu } from "react-icons/sl";
 import Dialog from "@mui/material/Dialog";
 import Slide from "@mui/material/Slide";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
 
 export const Header = () => {
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -21,70 +25,75 @@ export const Header = () => {
 
   return (
     <Box className=" bg-black " sx={{ color: "white" }}>
-      <Stack
-        mx={20}
-        p={3}
-        direction="row"
-        spacing={65}
-        className="hidden sm:flex"
-      >
-        <Typography
-          variant="subtitle2"
-          className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600"
+      {!fullScreen && (
+        <Stack
+          mx={20}
+          p={3}
+          direction="row"
+          spacing={65}
+          // className="hidden sm:flex"
         >
-          Portfolio
-        </Typography>
-        <Stack direction="row" spacing={3} className=" hidden sm:flex">
           <Typography
             variant="subtitle2"
-            className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black"
+            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600"
           >
-            About Me
+            Portfolio
           </Typography>
-          <Typography
-            variant="subtitle2"
-            className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black"
-          >
-            Skills
-          </Typography>
-          <Typography
-            variant="subtitle2"
-            className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black"
-          >
-            My Work
-          </Typography>
+          <Stack direction="row" spacing={3} className=" hidden sm:flex">
+            <Typography
+              variant="subtitle2"
+              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black"
+            >
+              About Me
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black"
+            >
+              Skills
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black"
+            >
+              My Work
+            </Typography>
+          </Stack>
         </Stack>
-        <Dialog
-          fullScreen
-          open={open}
-          onClose={handleClose}
-          TransitionComponent={Transition}
-        >
-          <Typography>Hello World </Typography>
-          <Button onClick={handleClose}>close</Button>
-        </Dialog>
-      </Stack>
+      )}
 
       {/* responseive header  */}
-      <Stack
-        ml={5}
-        p={3}
-        direction="row"
-        spacing={23}
-        className="sm:hidden flex justify-center items-center"
-      >
-        <Typography
-          variant="subtitle2"
-          className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600"
+
+      {fullScreen && (
+        <Stack
+          ml={5}
+          p={3}
+          direction="row"
+          spacing={23}
+          className="sm:hidden flex justify-center items-center"
         >
-          Portfolio
-        </Typography>
-        <SlMenu
-          fontSize="30px"
-          className=" text-sky-300 bg-white  rounded-full"
-          onClick={handleClickOpen}
-        />
-      </Stack>
+          <Typography
+            variant="subtitle2"
+            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600"
+          >
+            Portfolio
+          </Typography>
+          <SlMenu
+            fontSize="30px"
+            className=" text-sky-300 bg-white  rounded-full"
+            onClick={handleClickOpen}
+          />
+          <Dialog
+            fullScreen
+            open={open}
+            onClose={handleClose}
+            TransitionComponent={Transition}
+          >
+            <Typography>Hello World </Typography>
+            <Button onClick={handleClose}>close</Button>
+          </Dialog>
+        </Stack>
+      )}
     </Box>
   );
 };
