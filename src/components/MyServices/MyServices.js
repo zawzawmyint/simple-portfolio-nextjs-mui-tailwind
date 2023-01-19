@@ -25,7 +25,8 @@ const MyServices = () => {
         <Grid container spacing={5} mt={0}>
           <Grid
             item
-            xs={4}
+            xs={6}
+            md={4}
             className="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"
           >
             <Item>
@@ -46,7 +47,8 @@ const MyServices = () => {
           </Grid>
           <Grid
             item
-            xs={4}
+            xs={6}
+            md={4}
             className="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"
           >
             <Item>
@@ -68,7 +70,8 @@ const MyServices = () => {
           </Grid>
           <Grid
             item
-            xs={4}
+            xs={6}
+            md={4}
             className="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"
           >
             <Item>

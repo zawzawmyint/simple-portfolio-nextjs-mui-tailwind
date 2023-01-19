@@ -1,10 +1,17 @@
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Fade, Stack, Typography } from "@mui/material";
 import React from "react";
 import { SlMenu } from "react-icons/sl";
 import Dialog from "@mui/material/Dialog";
 import Slide from "@mui/material/Slide";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import Link from "next/link";
+
+import { RxCross1 } from "react-icons/rx";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
@@ -69,7 +76,7 @@ export const Header = () => {
           ml={5}
           p={3}
           direction="row"
-          spacing={23}
+          spacing={22}
           className="sm:hidden flex justify-center items-center"
         >
           <Typography
@@ -80,17 +87,71 @@ export const Header = () => {
           </Typography>
           <SlMenu
             fontSize="30px"
-            className=" text-sky-300 bg-white  rounded-full"
+            className=" text-sky-300  rounded"
             onClick={handleClickOpen}
+            size="20px"
           />
+
           <Dialog
             fullScreen
             open={open}
             onClose={handleClose}
             TransitionComponent={Transition}
+            transitionDuration={150}
+            PaperProps={{
+              style: {
+                backgroundColor: "gray",
+              },
+            }}
           >
-            <Typography>Hello World </Typography>
-            <Button onClick={handleClose}>close</Button>
+            <Box className="flex justify-end items-center m-7 ">
+              <RxCross1 onClick={handleClose} fontSize="30px" color="white" />
+            </Box>
+
+            <Box
+              sx={{
+                width: "100%",
+                bgcolor: "gray",
+                color: "lightgrey",
+              }}
+            >
+              <nav aria-label="secondary mailbox folders">
+                <List>
+                  <ListItem>
+                    <ListItemButton
+                      onClick={handleClose}
+                      className="justify-center"
+                    >
+                      <Link href="/">Home</Link>
+                    </ListItemButton>
+                  </ListItem>
+                  <ListItem>
+                    <ListItemButton
+                      onClick={handleClose}
+                      className="justify-center"
+                    >
+                      <Link href="/">About me</Link>
+                    </ListItemButton>
+                  </ListItem>
+                  <ListItem>
+                    <ListItemButton
+                      onClick={handleClose}
+                      className="justify-center"
+                    >
+                      <Link href="/">Skills</Link>
+                    </ListItemButton>
+                  </ListItem>
+                  <ListItem>
+                    <ListItemButton
+                      onClick={handleClose}
+                      className="justify-center"
+                    >
+                      <Link href="/">My Work</Link>
+                    </ListItemButton>
+                  </ListItem>
+                </List>
+              </nav>
+            </Box>
           </Dialog>
         </Stack>
       )}
