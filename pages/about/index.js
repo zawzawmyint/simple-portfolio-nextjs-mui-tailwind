@@ -1,3 +1,4 @@
+import AboutMeDetails from "@/src/components/AboutMe/AboutMeDetails";
 import Wireframe from "@/src/components/AboutMe/Wireframe";
 import Head from "next/head";
 
@@ -9,6 +10,7 @@ export default function Home() {
         <meta property="og:title" content="My page title" key="title" />
       </Head>
       <Wireframe />
+      <AboutMeDetails />
     </>
   );
 }

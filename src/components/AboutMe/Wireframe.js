@@ -7,7 +7,7 @@ const Wireframe = () => {
   return (
     <Box className="mx-auto bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 text-black h-auto py-10 sm:p-10">
       {/* <Box className="bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 p-10"></Box> */}
-      <Grid container spacing={2} className=" shadow-xl rounded-md p-5">
+      <Grid container spacing={2} className="rounded-md p-5">
         <Grid item xs={12} md={6}>
           <Box
             className="mx-auto  border-4 border-sky-50  transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"

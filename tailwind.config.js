@@ -7,10 +7,11 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
     fontFamily: {
-      sans: ['"PT Sans"', "sans-serif"],
+      gotham: ["GothamPro", "sans-serif"],
+      "libre-baskerville": ["Libre Baskerville", "serif"],
     },
+    extend: {},
   },
   plugins: [],
 };
