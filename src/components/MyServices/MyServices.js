@@ -19,7 +19,7 @@ const MyServices = () => {
   return (
     <Box className="bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 p-10">
       <Container maxWidth="lg" className="">
-        <Typography variant="h5" className=" font-bold text-cyan-100">
+        <Typography variant="h5" className=" font-bold text-cyan-100 font-mono">
           My Services
         </Typography>
         <Grid container spacing={5} mt={0}>
@@ -39,7 +39,7 @@ const MyServices = () => {
               />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600"
+                className=" font-bold mt-2 text-slate-600 font-mono"
               >
                 Web App Design
               </Typography>
@@ -62,7 +62,7 @@ const MyServices = () => {
               />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600"
+                className=" font-bold mt-2 text-slate-600 font-mono"
               >
                 Mobile App Design
               </Typography>
@@ -85,7 +85,7 @@ const MyServices = () => {
               />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600"
+                className=" font-bold mt-2 text-slate-600 font-mono"
               >
                 UI/UX Design
               </Typography>
@@ -108,7 +108,7 @@ const MyServices = () => {
               />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600"
+                className=" font-bold mt-2 text-slate-600 font-mono"
               >
                 Graphic Design
               </Typography>

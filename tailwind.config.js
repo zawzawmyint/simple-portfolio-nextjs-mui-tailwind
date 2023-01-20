@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -7,11 +9,11 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      gotham: ["GothamPro", "sans-serif"],
-      "libre-baskerville": ["Libre Baskerville", "serif"],
+    extend: {
+      fontFamily: {
+        Josefin: ["Josefin Sans", ...defaultTheme.fontFamily.sans],
+      },
     },
-    extend: {},
   },
   plugins: [],
 };

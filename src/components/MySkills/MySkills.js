@@ -43,6 +43,7 @@ function CircularProgressWithLabel(props) {
           component="div"
           color="text.secondary"
           fontSize={20}
+          className=" font-mono"
         >
           {`${Math.round(props.value)}%`}
         </Typography>
@@ -80,10 +81,10 @@ const MySkills = () => {
   return (
     <Box className="bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 p-10">
       <Container maxWidth="lg" className="">
-        <Typography variant="h5" className=" font-bold text-cyan-100">
+        <Typography variant="h5" className=" font-bold text-cyan-100 font-mono">
           My Skills
         </Typography>
-        <Grid container spacing={2} mt={0}>
+        <Grid container spacing={2} mt={4}>
           <Grid
             item
             xs={6}
@@ -94,7 +95,7 @@ const MySkills = () => {
               <CircularProgressWithLabel value={progress1} color="warning" />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600"
+                className=" font-bold mt-2 text-slate-600 font-mono"
               >
                 Html
               </Typography>
@@ -111,7 +112,7 @@ const MySkills = () => {
               <CircularProgressWithLabel value={progress2} color="primary" />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600"
+                className=" font-bold mt-2 text-slate-600 font-mono"
               >
                 CSS
               </Typography>
@@ -128,7 +129,7 @@ const MySkills = () => {
               <CircularProgressWithLabel value={progress3} color="error" />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600"
+                className=" font-bold mt-2 text-slate-600 font-mono"
               >
                 JavaScript
               </Typography>
@@ -145,7 +146,7 @@ const MySkills = () => {
               <CircularProgressWithLabel value={progress4} color="secondary" />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600"
+                className=" font-bold mt-2 text-slate-600 font-mono"
               >
                 React
               </Typography>

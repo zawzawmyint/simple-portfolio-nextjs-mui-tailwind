@@ -14,19 +14,19 @@ const Intro = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Box className=" flex flex-col gap-2 sm:mx-32 mx-20  my-10">
-            <Typography variant="h5" className="font-bold text-white">
+            <Typography variant="h5" className="font-bold text-white font-mono">
               Hi,
             </Typography>
-            <Typography variant="h5" className="font-bold text-white">
+            <Typography variant="h5" className="font-bold text-white font-mono">
               I'm{" "}
-              <span className="ease-in duration-300 text-amber-700 normal-case cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600">
+              <span className="ease-in duration-300 text-amber-700 normal-case cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600 font-mono">
                 Zaw Zaw Myint,
               </span>
             </Typography>
-            <Typography variant="h5" className="font-bold text-white">
+            <Typography variant="h5" className="font-bold text-white font-mono">
               <span
                 variant="subtitle1"
-                className="font-bold ease-in duration-300 normal-case text-violet-50 tracking-wide hover:text-violet-100"
+                className="font-bold ease-in duration-300 normal-case text-violet-50 tracking-wide hover:text-violet-100 font-mono"
               >
                 Front
               </span>{" "}
@@ -34,20 +34,20 @@ const Intro = () => {
             </Typography>
             <Typography
               variant="subtitle1"
-              className=" ease-in duration-300 normal-case text-black tracking-wide hover:tracking-widest hover:text-violet-100"
+              className=" ease-in duration-300 normal-case text-black tracking-wide hover:tracking-widest hover:text-violet-100 font-mono"
             >
               CSS / Javascript / React
             </Typography>
             <Stack direction="row" spacing={2}>
               <Button
                 variant="outlined"
-                className=" animate-bounce rounded-full  ease-in duration-300 normal-case text-amber-700  cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-700"
+                className=" animate-bounce rounded-full  ease-in duration-300 normal-case text-amber-700  cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-700 font-mono"
               >
                 Hire me
               </Button>
               <Button
                 variant="outlined"
-                className="ease-in duration-300 normal-case rounded-full text-sky-100  cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-sky-400 "
+                className="ease-in duration-300 normal-case rounded-full text-sky-100  cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-sky-400  font-mono"
               >
                 Contact me
               </Button>
@@ -55,24 +55,24 @@ const Intro = () => {
             <Stack direction="row" spacing={3} mt={1}>
               <GoMarkGithub
                 fontSize="30px"
-                className=" text-sky-300 bg-black rounded-full hover:animate-bounce"
+                className=" text-sky-300 bg-black rounded-full hover:animate-bounce font-mono"
               />
               <TiSocialLinkedinCircular
                 fontSize="30px"
-                className=" text-sky-300 bg-black rounded-full hover:animate-bounce"
+                className=" text-sky-300 bg-black rounded-full hover:animate-bounce font-mono"
               />
               <AiFillTwitterCircle
                 fontSize="30px"
-                className=" text-sky-300 bg-black rounded-full hover:animate-bounce"
+                className=" text-sky-300 bg-black rounded-full hover:animate-bounce font-mono"
               />
 
               <RiInstagramFill
                 fontSize="30px"
-                className=" text-sky-300 bg-black rounded-full hover:animate-bounce"
+                className=" text-sky-300 bg-black rounded-full hover:animate-bounce font-mono"
               />
               <FaDev
                 fontSize="30px"
-                className=" text-sky-300 bg-black hover:animate-bounce rounded-full"
+                className=" text-sky-300 bg-black hover:animate-bounce rounded-full font-mono"
               />
             </Stack>
           </Box>

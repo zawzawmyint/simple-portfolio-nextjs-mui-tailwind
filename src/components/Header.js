@@ -41,36 +41,36 @@ export const Header = () => {
         >
           <Typography
             variant="subtitle2"
-            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600"
+            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600 font-mono"
           >
             <Link href={"/"}>Portfolio</Link>
           </Typography>
           <Stack
             direction="row"
             spacing={3}
-            className=" hidden sm:flex p-2 border-2 border-slate-800 rounded-full shadow-lg shadow-orange-600"
+            className=" hidden sm:flex p-2 border-2 border-slate-800 rounded-full shadow-lg shadow-orange-600 "
           >
             <Typography
               variant="subtitle2"
-              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black"
+              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black font-mono"
             >
               <Link href={"/"}>Home</Link>
             </Typography>
             <Typography
               variant="subtitle2"
-              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black"
+              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black font-mono"
             >
               <Link href={"/about"}>About Me</Link>
             </Typography>
             <Typography
               variant="subtitle2"
-              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black"
+              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black font-mono"
             >
               <Link href={"/skills"}>Skills</Link>
             </Typography>
             <Typography
               variant="subtitle2"
-              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black"
+              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black font-mono"
             >
               <Link href={"/mywork"}>My Work</Link>
             </Typography>
@@ -90,7 +90,7 @@ export const Header = () => {
         >
           <Typography
             variant="subtitle2"
-            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600"
+            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600 font-mono"
           >
             <Link href="/">Portfolio</Link>
           </Typography>
@@ -129,7 +129,7 @@ export const Header = () => {
                   <ListItem>
                     <ListItemButton
                       onClick={handleClose}
-                      className="justify-center"
+                      className="justify-center font-mono"
                     >
                       <Link href="/">Home</Link>
                     </ListItemButton>
@@ -137,7 +137,7 @@ export const Header = () => {
                   <ListItem>
                     <ListItemButton
                       onClick={handleClose}
-                      className="justify-center"
+                      className="justify-center font-mono"
                     >
                       <Link href="/about">About me</Link>
                     </ListItemButton>
@@ -145,7 +145,7 @@ export const Header = () => {
                   <ListItem>
                     <ListItemButton
                       onClick={handleClose}
-                      className="justify-center"
+                      className="justify-center font-mono"
                     >
                       <Link href="/skills">Skills</Link>
                     </ListItemButton>
@@ -153,7 +153,7 @@ export const Header = () => {
                   <ListItem>
                     <ListItemButton
                       onClick={handleClose}
-                      className="justify-center"
+                      className="justify-center font-mono"
                     >
                       <Link href="/mywork">My Work</Link>
                     </ListItemButton>

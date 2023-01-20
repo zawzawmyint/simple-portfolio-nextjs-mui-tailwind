@@ -11,22 +11,17 @@ import mdn from "../../../public/assets/images/mdn.jpg";
 import stackoverflow from "../../../public/assets/images/stackoverflow.jpg";
 import { useTheme } from "@mui/material";
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
-
 const AboutMeDetails = () => {
   const theme = useTheme();
   return (
     <Box className="mx-auto bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 text-black h-auto  p-10">
-      <Typography variant="h6" className="text-sky-200 font-bold">
+      <Typography variant="h6" className="text-sky-200 font-bold font-Josefin">
         Hello!, Nice to meet you
       </Typography>
-      <Typography variant="body1" className=" text-gray-300 sm:w-3/4 mt-5">
+      <Typography
+        variant="body1"
+        className=" text-gray-300 sm:w-3/4 mt-5 font-Josefin"
+      >
         {" "}
         I'm Zaw Zaw Myint, and I graduated from the University of Computer
         Studies in 2019 with a degree in Computer Science. My interests are in
@@ -35,10 +30,16 @@ const AboutMeDetails = () => {
       </Typography>
       <Grid container spacing={2} mt={5}>
         <Grid item xs={12} md={4}>
-          <Typography variant="h6" className="text-sky-200 font-bold">
+          <Typography
+            variant="h6"
+            className="text-sky-200 font-bold font-Josefin"
+          >
             I believe in learning thru experience
           </Typography>
-          <Typography variant="body1" className=" text-gray-300 sm:w-2/3 mt-5">
+          <Typography
+            variant="body1"
+            className=" text-gray-300 sm:w-2/3 mt-5 font-Josefin"
+          >
             {" "}
             I am always ready to accept new challenges and push my limits. I
             have worked from nascent startup to companies and believe in
@@ -109,10 +110,16 @@ const AboutMeDetails = () => {
 
       <Grid container spacing={2} mt={5}>
         <Grid item xs={12} md={4}>
-          <Typography variant="h6" className="text-sky-200 font-bold">
+          <Typography
+            variant="h6"
+            className="text-sky-200 font-bold font-Josefin"
+          >
             I do much more than just work
           </Typography>
-          <Typography variant="body1" className=" text-gray-300 sm:w-2/3 mt-5">
+          <Typography
+            variant="body1"
+            className=" text-gray-300 sm:w-2/3 mt-5 font-Josefin"
+          >
             {" "}
             Work hard and party harder, this is what I follow. I always try to
             enjoy life its fullest, when I am not designing you can find me
