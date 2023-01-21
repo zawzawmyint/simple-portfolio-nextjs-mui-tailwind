@@ -9,6 +9,7 @@ import github from "../../../public/assets/images/github.png";
 import twitter from "../../../public/assets/images/twitter.jpg";
 import mdn from "../../../public/assets/images/mdn.jpg";
 import stackoverflow from "../../../public/assets/images/stackoverflow.jpg";
+import chatgpt from "../../../public/assets/images/chatgpt.jpg";
 import { useTheme } from "@mui/material";
 
 const AboutMeDetails = () => {
@@ -97,7 +98,7 @@ const AboutMeDetails = () => {
             </Grid>
             <Grid item xs={6} md={4}>
               <Image
-                src={twitter}
+                src={chatgpt}
                 alt="Picture of the author"
                 width={100}
                 height={100}
@@ -178,7 +179,7 @@ const AboutMeDetails = () => {
             </Grid>
             <Grid item xs={6} md={4}>
               <Image
-                src={twitter}
+                src={chatgpt}
                 alt="Picture of the author"
                 width={100}
                 height={100}
