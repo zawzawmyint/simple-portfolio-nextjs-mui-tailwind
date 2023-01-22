@@ -15,6 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(2),
   textAlign: "center",
   color: theme.palette.text.secondary,
+  borderRadius: "20px",
 }));
 
 function CircularProgressWithLabel(props) {
@@ -95,7 +96,7 @@ const MySkills = () => {
               <CircularProgressWithLabel value={progress1} color="warning" />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600 font-mono"
+                className=" font-bold mt-2 text-sky-400 font-mono"
               >
                 Html
               </Typography>
@@ -112,7 +113,7 @@ const MySkills = () => {
               <CircularProgressWithLabel value={progress2} color="primary" />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600 font-mono"
+                className=" font-bold mt-2 text-sky-400 font-mono"
               >
                 CSS
               </Typography>
@@ -129,7 +130,7 @@ const MySkills = () => {
               <CircularProgressWithLabel value={progress3} color="error" />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600 font-mono"
+                className=" font-bold mt-2 text-sky-400 font-mono"
               >
                 JavaScript
               </Typography>
@@ -146,7 +147,7 @@ const MySkills = () => {
               <CircularProgressWithLabel value={progress4} color="secondary" />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600 font-mono"
+                className=" font-bold mt-2 text-sky-400 font-mono"
               >
                 React
               </Typography>

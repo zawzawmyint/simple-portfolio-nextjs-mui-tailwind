@@ -13,6 +13,7 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(2),
   textAlign: "center",
   color: theme.palette.text.secondary,
+  borderRadius: "20px",
 }));
 
 const MyServices = () => {
@@ -33,13 +34,13 @@ const MyServices = () => {
               <Image
                 src={webdesign}
                 alt="Picture of the author"
-                width={200}
-                height={200}
+                width={100}
+                height={100}
                 className=" mx-auto ease-in duration-300 hover:animate-pulse "
               />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600 font-mono"
+                className=" font-bold mt-2 text-sky-400 font-mono"
               >
                 Web App Design
               </Typography>
@@ -56,13 +57,13 @@ const MyServices = () => {
               <Image
                 src={mobiledesign}
                 alt="Picture of the author"
-                width={200}
-                height={200}
+                width={100}
+                height={100}
                 className=" mx-auto hover:animate-pulse "
               />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600 font-mono"
+                className=" font-bold mt-2 text-sky-400 font-mono"
               >
                 Mobile App Design
               </Typography>
@@ -79,13 +80,13 @@ const MyServices = () => {
               <Image
                 src={uiuxdesign}
                 alt="Picture of the author"
-                width={200}
-                height={200}
+                width={100}
+                height={100}
                 className=" mx-auto ease-in duration-300 hover:animate-pulse "
               />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600 font-mono"
+                className=" font-bold mt-2 text-sky-400 font-mono"
               >
                 UI/UX Design
               </Typography>
@@ -102,13 +103,13 @@ const MyServices = () => {
               <Image
                 src={uiuxdesign}
                 alt="Picture of the author"
-                width={200}
-                height={200}
+                width={100}
+                height={100}
                 className=" mx-auto ease-in duration-300 hover:animate-pulse "
               />
               <Typography
                 variant="body1"
-                className=" font-bold mt-2 text-slate-600 font-mono"
+                className=" font-bold mt-2 text-sky-400 font-mono"
               >
                 Graphic Design
               </Typography>

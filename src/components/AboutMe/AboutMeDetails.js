@@ -16,19 +16,6 @@ const AboutMeDetails = () => {
   const theme = useTheme();
   return (
     <Box className="mx-auto bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 text-black h-auto  p-10">
-      <Typography variant="h6" className="text-sky-200 font-bold font-Josefin">
-        Hello!, Nice to meet you
-      </Typography>
-      <Typography
-        variant="body1"
-        className=" text-gray-300 sm:w-3/4 mt-5 font-Josefin"
-      >
-        {" "}
-        I'm Zaw Zaw Myint, and I graduated from the University of Computer
-        Studies in 2019 with a degree in Computer Science. My interests are in
-        Front End Engineering, and I love to create beautiful and performant
-        products with delightful user experiences.
-      </Typography>
       <Grid container spacing={2} mt={5}>
         <Grid item xs={12} md={4}>
           <Typography

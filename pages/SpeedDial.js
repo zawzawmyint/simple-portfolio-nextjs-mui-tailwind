@@ -8,16 +8,17 @@ import ShareIcon from "@mui/icons-material/Share";
 import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FaceIcon from "@mui/icons-material/Face";
 import Link from "next/link";
 const actions = [
   {
-    icon: <DownloadForOfflineIcon />,
+    icon: <DownloadForOfflineIcon className="text-green-700" />,
     name: "Download CV",
   },
   {
     icon: (
       <Link href={"https://github.com/zawzawmyint"}>
-        <GitHubIcon />
+        <GitHubIcon className="text-black" />
       </Link>
     ),
     name: "Github",
@@ -25,12 +26,12 @@ const actions = [
   {
     icon: (
       <Link href={"https://www.linkedin.com/in/zaw-zaw-myint-29745a199/"}>
-        <LinkedInIcon />
+        <LinkedInIcon className=" text-cyan-600" />
       </Link>
     ),
     name: "LinkIn",
   },
-  { icon: <EmailIcon />, name: "Email" },
+  { icon: <EmailIcon className="text-rose-400" />, name: "Email" },
 ];
 
 export default function BasicSpeedDial() {
@@ -43,7 +44,7 @@ export default function BasicSpeedDial() {
           bottom: 16,
           right: 16,
         }}
-        icon={<SpeedDialIcon className=" bg-black rounded-full" />}
+        icon={<FaceIcon className="rounded text-black" />}
       >
         {actions.map((action) => (
           <SpeedDialAction

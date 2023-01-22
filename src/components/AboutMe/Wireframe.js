@@ -28,6 +28,7 @@ const Wireframe = (props) => {
   }
 
   return (
+    // <Box className="mx-auto bg-black text-black h-auto py-10 sm:p-10">
     <Box className="mx-auto bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 text-black h-auto py-10 sm:p-10">
       <Grid container spacing={2} className="rounded-md p-5 ">
         {show && (
@@ -41,7 +42,7 @@ const Wireframe = (props) => {
                 alt="Picture of the author"
                 width={300}
                 height={200}
-                className=" mx-auto  transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300 rounded-3xl"
+                className=" mx-auto  transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300 rounded-3xl"
               />
             </Box>
           </Grid>
@@ -53,6 +54,22 @@ const Wireframe = (props) => {
               className=" font-bold text-cyan-300 font-mono"
             >
               About Me
+            </Typography>
+            <Typography
+              variant="h6"
+              className="text-sky-200 font-bold font-Josefin"
+            >
+              Hello!, Nice to meet you
+            </Typography>
+            <Typography
+              variant="body1"
+              className=" text-gray-300 sm:w-3/4  font-Josefin tracking-wider"
+            >
+              {" "}
+              I'm Zaw Zaw Myint, and I graduated from the University of Computer
+              Studies in 2019 with a degree in Computer Science. My interests
+              are in Front End Engineering, and I love to create beautiful and
+              performant products with delightful user experiences.
             </Typography>
             <Stack direction="row" spacing={21}>
               <Typography
@@ -68,7 +85,7 @@ const Wireframe = (props) => {
                 Zaw Zaw Myint (Flez)
               </Typography>
             </Stack>
-            <Stack direction="row" spacing={14}>
+            <Stack direction="row" spacing={14} className="sr-only">
               <Typography
                 variant="body1"
                 className="font-semibold text-sky-200 font-mono"
@@ -82,7 +99,7 @@ const Wireframe = (props) => {
                 22/04/97
               </Typography>
             </Stack>
-            <Stack direction="row" spacing={18}>
+            <Stack direction="row" spacing={18} className="sr-only">
               <Typography
                 variant="body1"
                 className="font-semibold text-sky-200 font-mono"

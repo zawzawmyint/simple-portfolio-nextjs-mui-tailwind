@@ -24,7 +24,7 @@ const Footer = () => {
           className="flex justify-center items-center"
         >
           <SiGmail />
-          <Typography className=" font-semibold text-lg tracking-widest hover:underline text-amber-700 cursor-pointer">
+          <Typography className=" font-semibold text-lg tracking-widest hover:underline text-sky-400 cursor-pointer">
             cuzawzawmyint@gmail.com
           </Typography>
         </Stack>

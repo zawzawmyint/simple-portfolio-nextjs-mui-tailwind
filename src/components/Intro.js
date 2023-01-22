@@ -19,7 +19,7 @@ import Link from "next/link";
 
 const Intro = () => {
   return (
-    <Box className=" bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 text-black h-auto py-10 sm:p-10">
+    <Box className=" bg-gradient-to-r from-black via-black to-black text-black h-auto py-10 sm:p-10">
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Box className=" flex flex-col gap-2 sm:mx-32 mx-10  my-10">
@@ -27,11 +27,23 @@ const Intro = () => {
               Hi,
             </Typography>
             <Typography variant="h5" className="font-bold text-white font-mono">
-              I'm{" "}
-              <span className="ease-in duration-300 text-amber-700 normal-case cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600 font-mono">
-                Zaw Zaw Myint,
+              I&apos;m{" "}
+              <span className="relative">
+                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-orange-500">
+                  Zaw Zaw Myint
+                </span>
+                <span className="{` absolute -bottom-0 left-0 -top-1 inline-block bg-black w-full animate-type will-change`}"></span>
               </span>
             </Typography>
+            {/* <h1 className="mb-2 font-mono text-4xl text-gray-100 md:text-6xl">
+              hi, I&apos;m <br className="block md:hidden" />
+              <span className="relative">
+                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent">
+                  vanntile <span className="text-3xl md:text-5xl">👋</span>
+                </span>
+                <span className="{` absolute -bottom-0 left-0 -top-1 inline-block bg-gray-900 w-full animate-type will-change`}"></span>
+              </span>
+            </h1> */}
             <Typography variant="h5" className="font-bold text-white font-mono">
               <span
                 variant="subtitle1"
@@ -44,7 +56,7 @@ const Intro = () => {
             <Typography
               mb={2}
               variant="subtitle1"
-              className=" ease-in duration-300 normal-case text-black text-xl  font-bold tracking-wide hover:tracking-widest hover:text-violet-100 font-mono"
+              className=" ease-in duration-300 normal-case text-sky-200 text-xl  font-bold tracking-wide hover:tracking-widest hover:text-violet-100 font-mono"
             >
               CSS / Javascript / React
             </Typography>
