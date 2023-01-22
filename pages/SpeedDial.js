@@ -12,7 +12,11 @@ import FaceIcon from "@mui/icons-material/Face";
 import Link from "next/link";
 const actions = [
   {
-    icon: <DownloadForOfflineIcon className="text-green-700" />,
+    icon: (
+      <Link href="/files/ZawZawMyintCV.pdf" locale={false} download>
+        <DownloadForOfflineIcon className="text-green-700" />
+      </Link>
+    ),
     name: "Download CV",
   },
   {

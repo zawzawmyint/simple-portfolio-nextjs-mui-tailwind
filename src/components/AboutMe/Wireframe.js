@@ -10,6 +10,9 @@ import React from "react";
 import Image from "next/image";
 import aboutme from "../../../public/assets/images/aboutme2.png";
 import { useTheme } from "@mui/material/styles";
+import useDownloader from "react-use-downloader";
+import Link from "next/link";
+// import { url } from "../../../public/pdf/a.pdf";
 
 const Wireframe = (props) => {
   const theme = useTheme();
@@ -146,7 +149,9 @@ const Wireframe = (props) => {
                 variant="outlined"
                 className="normal-case rounded-3xl text-amber-700 transition ease-in delay-75 hover:-translate-y-1 hover:scale-110 duration-300 font-mono"
               >
-                Download CV
+                <Link href="/files/ZawZawMyintCV.pdf" locale={false} download>
+                  Download CV
+                </Link>
               </Button>
             </Box>
           </Box>
