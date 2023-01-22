@@ -33,7 +33,7 @@ const Wireframe = (props) => {
         {show && (
           <Grid item xs={12} md={6}>
             <Box
-              className="mx-auto  border-4 border-sky-50  transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"
+              className="mx-auto  border-4 border-sky-400  transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300 rounded-3xl"
               width={300}
             >
               <Image
@@ -41,7 +41,7 @@ const Wireframe = (props) => {
                 alt="Picture of the author"
                 width={300}
                 height={200}
-                className=" mx-auto  transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300"
+                className=" mx-auto  transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300 rounded-3xl"
               />
             </Box>
           </Grid>
