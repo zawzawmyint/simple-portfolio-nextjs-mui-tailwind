@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Protfolio</title>
+        <title>Portfolio</title>
         <meta property="og:title" content="My page title" key="title" />
       </Head>
       <Intro />

@@ -52,25 +52,25 @@ export const Header = () => {
           >
             <Typography
               variant="subtitle2"
-              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black font-mono"
+              className="ease-in normal-case duration-300  cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black font-mono"
             >
               <Link href={"/"}>Home</Link>
             </Typography>
             <Typography
               variant="subtitle2"
-              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black font-mono"
+              className="ease-in duration-300 normal-case cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black font-mono"
             >
               <Link href={"/about"}>About Me</Link>
             </Typography>
             <Typography
               variant="subtitle2"
-              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black font-mono"
+              className="ease-in duration-300 normal-case cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black font-mono"
             >
               <Link href={"/skills"}>Skills</Link>
             </Typography>
             <Typography
               variant="subtitle2"
-              className="ease-in duration-300 uppercase cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black font-mono"
+              className="ease-in duration-300 normal-case cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black font-mono"
             >
               <Link href={"/mywork"}>My Work</Link>
             </Typography>
