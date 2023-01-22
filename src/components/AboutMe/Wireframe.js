@@ -68,7 +68,7 @@ const Wireframe = (props) => {
                 Zaw Zaw Myint (Flez)
               </Typography>
             </Stack>
-            <Stack direction="row" spacing={12}>
+            <Stack direction="row" spacing={13}>
               <Typography
                 variant="body1"
                 className="font-semibold text-sky-200 font-mono"
