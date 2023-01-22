@@ -7,9 +7,9 @@ import { SiGmail } from "react-icons/si";
 const Footer = () => {
   return (
     <Box className=" bg-neutral-800 rounded" sx={{ color: "white" }}>
-      <Box className=" text-center p-5 flex flex-col gap-5">
+      <Box className=" text-center p-1 flex flex-col gap-2">
         <Typography variant="h4" className=" font-mono font-bold">
-          Say <span className=" animate-pulse ">Hello</span>
+          Say <span className=" animate-pulse text-blue-700">Hello 👋</span>
         </Typography>
         <Typography className=" font-mono text-lg">
           I am available for freelance projects, remote work or just discussing
@@ -21,7 +21,7 @@ const Footer = () => {
           className="flex justify-center items-center"
         >
           <SiGmail />
-          <Typography className=" font-semibold tracking-widest hover:underline text-amber-700 cursor-pointer">
+          <Typography className=" font-semibold text-lg tracking-widest hover:underline text-amber-700 cursor-pointer">
             cuzawzawmyint@gmail.com
           </Typography>
         </Stack>

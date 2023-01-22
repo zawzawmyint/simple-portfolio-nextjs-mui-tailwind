@@ -9,7 +9,7 @@ export default function Home() {
         <title>About me</title>
         <meta property="og:title" content="My page title" key="title" />
       </Head>
-      <Wireframe />
+      <Wireframe view="about" />
       <AboutMeDetails />
     </>
   );

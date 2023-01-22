@@ -13,7 +13,7 @@ export default function Home() {
         <meta property="og:title" content="My page title" key="title" />
       </Head>
       <Intro />
-      <Wireframe />
+      <Wireframe view="home" />
       <MySkills />
       <MyServices />
     </>

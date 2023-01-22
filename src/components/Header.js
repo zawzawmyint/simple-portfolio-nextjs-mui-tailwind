@@ -30,7 +30,7 @@ export const Header = () => {
   };
 
   return (
-    <Box className=" bg-black " sx={{ color: "white" }}>
+    <Box className=" bg-black" sx={{ color: "white" }}>
       {!fullScreen && (
         <Stack
           mx={10}
@@ -41,7 +41,7 @@ export const Header = () => {
         >
           <Typography
             variant="subtitle2"
-            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600 font-mono"
+            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold text-xl tracking-wide hover:tracking-widest hover:text-orange-600 font-mono"
           >
             <Link href={"/"}>Portfolio</Link>
           </Typography>
@@ -90,7 +90,7 @@ export const Header = () => {
         >
           <Typography
             variant="subtitle2"
-            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-600 font-mono"
+            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer text-lg  font-bold tracking-wide hover:tracking-widest hover:text-orange-600 font-mono"
           >
             <Link href="/">Portfolio</Link>
           </Typography>
