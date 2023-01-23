@@ -1,4 +1,5 @@
 import MyServices from "@/src/components/MyServices/MyServices";
+import WorkExperience from "@/src/components/MyServices/WorkExperience";
 import Head from "next/head";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <meta property="og:title" content="My page title" key="title" />
       </Head>
       <MyServices />
+      <WorkExperience />
     </>
   );
 }
