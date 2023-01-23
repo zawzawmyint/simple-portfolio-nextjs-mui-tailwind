@@ -71,7 +71,7 @@ const Intro = () => {
                 variant="outlined"
                 className="ease-in duration-300 normal-case rounded-full text-sky-100  cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-sky-400  font-mono"
               >
-                Contact me
+                <Link href={"/contactus"}>Contact me</Link>
               </Button>
             </Stack>
             <Stack direction="row" spacing={3} mt={1}>
