@@ -36,40 +36,30 @@ const ContactUs = () => {
         <Divider className=" bg-white w-60" />
         <CardContent className=" rounded-xl">
           <Grid container spacing={2}>
-            <Grid
-              item
-              xs={12}
-              md={6}
-              className=" bg-gray-700 flex flex-col gap-5"
-            >
-              <Typography variant="subtitle1" className=" text-white">
+            <Grid item xs={12} md={6} className=" bg-gray-700">
+              <Typography variant="subtitle1" className="text-white">
                 Our Contacts
               </Typography>
               <Typography
                 variant="body2"
-                className=" text-white mt-10 flex justify-start items-end"
+                className=" text-white mt-10 flex justify-start items-end "
               >
                 <LocationOnIcon fontSize="small" /> New Youk City, America
               </Typography>
               <Typography
                 variant="body2"
-                className=" text-white flex justify-start items-end"
+                className=" text-white flex justify-start items-end mt-5"
               >
                 <LocalPhoneIcon fontSize="small" /> 099876556
               </Typography>
               <Typography
                 variant="body2"
-                className=" text-white flex justify-start items-end mb-5"
+                className=" text-white flex justify-start items-end my-5 "
               >
                 <EmailIcon fontSize="small" /> cuzawzawmyint@gmail.com
               </Typography>
             </Grid>
-            <Grid
-              item
-              xs={12}
-              md={6}
-              className=" bg-white flex flex-col gap-3 rounded-lg"
-            >
+            <Grid item xs={12} md={6} className=" bg-white rounded-lg">
               <Typography
                 variant="subtitle1"
                 className=" text-black font-bold font-mono"
