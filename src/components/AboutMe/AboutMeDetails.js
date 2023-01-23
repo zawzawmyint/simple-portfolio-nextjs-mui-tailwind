@@ -15,7 +15,7 @@ import { useTheme } from "@mui/material";
 const AboutMeDetails = () => {
   const theme = useTheme();
   return (
-    <Box className="mx-auto bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 text-black h-auto  p-10">
+    <Box className="mx-auto bg-black text-black h-auto  p-10">
       <Grid container spacing={2} mt={5}>
         <Grid item xs={12} md={4}>
           <Typography

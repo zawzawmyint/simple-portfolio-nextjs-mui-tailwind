@@ -61,7 +61,7 @@ const WorkExperience = () => {
     setActiveStep(id);
   };
   return (
-    <Box className="bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 p-10">
+    <Box className="bg-black p-10">
       <Container maxWidth="lg" className="">
         <Typography
           variant="h5"

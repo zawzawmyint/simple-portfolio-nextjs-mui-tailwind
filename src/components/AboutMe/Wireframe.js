@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  CardContent,
   Grid,
   Stack,
   Typography,
@@ -8,7 +9,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import Image from "next/image";
-import aboutme from "../../../public/assets/images/aboutme2.png";
+import aboutme from "../../../public/assets/images/aboutme3.png";
 import { useTheme } from "@mui/material/styles";
 import useDownloader from "react-use-downloader";
 import Link from "next/link";
@@ -73,27 +74,27 @@ const Wireframe = (props) => {
   }
 
   return (
-    // <Box className="mx-auto bg-black text-black h-auto py-10 sm:p-10">
-    <Box className="mx-auto bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-50 text-black h-auto py-10 sm:p-10">
+    <Box className="mx-auto bg-black text-black h-auto py-10 sm:p-10">
+      {/* <Box className="mx-auto bg-gradient-to-r from-gray-600 via-gray-700 to-cyan-100 text-black h-auto py-10 sm:p-10"> */}
       <Grid container spacing={2} className="rounded-md p-5 ">
         {show && (
           <Grid item xs={12} md={6}>
             <Box
-              className="mx-auto  border-4 border-sky-400  transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300 rounded-3xl"
-              width={300}
+              className="mx-auto  border-2 border-sky-400  transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300 rounded-xl"
+              width={250}
             >
               <Image
                 src={aboutme}
                 alt="Picture of the author"
-                width={300}
+                width={250}
                 height={200}
-                className=" mx-auto  transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300 rounded-3xl"
+                className=" mx-auto  transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl"
               />
             </Box>
           </Grid>
         )}
         <Grid item xs={12} md={6}>
-          <Box className=" flex flex-col gap-5">
+          <Box className=" flex flex-col gap-3">
             <Typography
               variant="h5"
               className=" font-bold text-cyan-300 font-Josefin"
@@ -106,103 +107,111 @@ const Wireframe = (props) => {
             >
               Hello!, Nice to meet you
             </Typography>
-            <Typography
-              variant="body1"
-              className=" text-gray-300 sm:w-3/4  font-Josefin tracking-wider"
-            >
-              {" "}
-              I'm Zaw Zaw Myint, and I graduated from the University of Computer
-              Studies in 2019 with a degree in Computer Science. My interests
-              are in Front End Engineering, and I love to create beautiful and
-              performant products with delightful user experiences.
-            </Typography>
-            <FormGroup>
-              <FormControlLabel
-                control={<Android12Switch onChange={showDetails} />}
-                label={
-                  <Typography
-                    variant="subtitle1"
-                    className="text-white font-mono"
-                  >
-                    Details
-                  </Typography>
-                }
-              />
-            </FormGroup>
-            {details && (
-              <>
-                <Stack direction="row" spacing={21}>
-                  <Typography
-                    variant="body1"
-                    className=" text-sky-200 font-semibold font-mono"
-                  >
-                    Name:
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    className=" text-yellow-400 tracking-wider font-mono font-bold"
-                  >
-                    Zaw Zaw Myint (Flez)
-                  </Typography>
-                </Stack>
-                <Stack direction="row" spacing={14} className="sr-only">
-                  <Typography
-                    variant="body1"
-                    className="font-semibold text-sky-200 font-mono"
-                  >
-                    Date of Birth:
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    className=" text-yellow-400 tracking-wider font-mono"
-                  >
-                    22/04/97
-                  </Typography>
-                </Stack>
-                <Stack direction="row" spacing={18} className="sr-only">
-                  <Typography
-                    variant="body1"
-                    className="font-semibold text-sky-200 font-mono"
-                  >
-                    Address:
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    className=" text-yellow-400 tracking-wider font-mono"
-                  >
-                    Yangon
-                  </Typography>
-                </Stack>
-                <Stack direction="row" spacing={20}>
-                  <Typography
-                    variant="body1"
-                    className="font-semibold text-sky-200 font-mono"
-                  >
-                    Email:
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    className="break-all text-yellow-400 tracking-wider font-mono"
-                  >
-                    cuzawzawmyint@gmail.com
-                  </Typography>
-                </Stack>
-                <Stack direction="row" spacing={20}>
-                  <Typography
-                    variant="body1"
-                    className="font-semibold text-sky-200 font-mono"
-                  >
-                    Phone:
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    className=" text-yellow-400 tracking-wider font-mono"
-                  >
-                    09-978205997
-                  </Typography>
-                </Stack>
-              </>
-            )}
+            <CardContent className=" shadow-xl bg-gray-900 rounded-lg">
+              <Typography
+                variant="body1"
+                className="first-letter:ml-3 first-line:tracking-widest
+                first-letter:text-3xl text-gray-300 sm:w-3/4  font-Josefin tracking-wider "
+              >
+                I'm Zaw Zaw Myint, and I graduated from the University of
+                Computer Studies in 2019 with a degree in Computer Science. My
+                interests are in Front End Engineering, and I love to create
+                beautiful and performant products with delightful user
+                experiences.
+              </Typography>
+              <FormGroup>
+                <FormControlLabel
+                  control={
+                    <Android12Switch
+                      className="text-white"
+                      onChange={showDetails}
+                    />
+                  }
+                  label={
+                    <Typography
+                      variant="subtitle1"
+                      className="text-white font-mono"
+                    >
+                      Details
+                    </Typography>
+                  }
+                />
+              </FormGroup>
+              {details && (
+                <Box className=" flex flex-col gap-3">
+                  <Stack direction="row" spacing={15}>
+                    <Typography
+                      variant="body1"
+                      className=" text-sky-200 font-semibold font-mono"
+                    >
+                      Name:
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      className=" text-gray-200 tracking-wider font-mono font-bold"
+                    >
+                      Zaw Zaw Myint (Flez)
+                    </Typography>
+                  </Stack>
+                  <Stack direction="row" spacing={10} className="sr-only">
+                    <Typography
+                      variant="body1"
+                      className="font-semibold text-sky-200 font-mono"
+                    >
+                      Date of Birth:
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      className=" text-gray-200 tracking-wider font-mono"
+                    >
+                      22/04/97
+                    </Typography>
+                  </Stack>
+                  <Stack direction="row" spacing={12} className="">
+                    <Typography
+                      variant="body1"
+                      className="font-semibold text-sky-200 font-mono"
+                    >
+                      Address:
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      className=" text-gray-200 tracking-wider font-mono"
+                    >
+                      Yangon
+                    </Typography>
+                  </Stack>
+                  <Stack direction="row" spacing={14}>
+                    <Typography
+                      variant="body1"
+                      className="font-semibold text-sky-200 font-mono"
+                    >
+                      Email:
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      className="break-all text-gray-200 tracking-widest font-mono "
+                    >
+                      cuzawzawmyint@gmail.com
+                    </Typography>
+                  </Stack>
+                  <Stack direction="row" spacing={14}>
+                    <Typography
+                      variant="body1"
+                      className="font-semibold text-sky-200 font-mono "
+                    >
+                      Phone:
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      className=" text-gray-200 tracking-wider font-mono"
+                    >
+                      09-978205997
+                    </Typography>
+                  </Stack>
+                </Box>
+              )}
+            </CardContent>
             <Box>
               <Button
                 variant="outlined"

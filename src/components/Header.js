@@ -31,7 +31,7 @@ export const Header = () => {
 
   return (
     <Box
-      className=" bg-black shadow-lg shadow-cyan-100 border-1 border-cyan-50"
+      className=" bg-black bg-opacity-90 shadow-cyan-100 border-1"
       sx={{ color: "white" }}
     >
       {!fullScreen && (
@@ -51,7 +51,7 @@ export const Header = () => {
           <Stack
             direction="row"
             spacing={3}
-            className=" hidden sm:flex p-2 border-2 border-slate-800 rounded-full shadow-lg shadow-orange-600 "
+            className=" hidden sm:flex p-2 border-2 border-slate-800 rounded-full shadow-md shadow-orange-500 "
           >
             <Typography
               variant="subtitle2"
@@ -85,15 +85,15 @@ export const Header = () => {
 
       {fullScreen && (
         <Stack
-          ml={5}
+          ml={1}
           py={3}
           direction="row"
-          spacing={25}
+          spacing={27}
           className="sm:hidden flex justify-center items-center"
         >
           <Typography
             variant="subtitle2"
-            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer text-lg  font-bold tracking-wide hover:tracking-widest hover:text-orange-600 font-mono"
+            className="ease-in duration-300 text-amber-500 uppercase cursor-pointer text-xl  font-bold tracking-wide hover:tracking-widest hover:text-orange-600 font-mono"
           >
             <Link href="/">Portfolio</Link>
           </Typography>

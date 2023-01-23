@@ -26,11 +26,20 @@ const Intro = () => {
             <Typography variant="h5" className="font-bold text-white font-mono">
               Hi,
             </Typography>
-            <Typography variant="h5" className="font-bold text-white font-mono">
+            <Typography
+              variant="h5"
+              className="font-bold text-white font-mono "
+            >
               I&apos;m{" "}
-              <span className="relative">
+              <span className="relative hidden sm:inline-block">
                 <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-orange-500">
                   Zaw Zaw Myint
+                </span>
+                <span className="{` absolute -bottom-0 left-0 -top-1 inline-block bg-black w-full animate-type will-change`}"></span>
+              </span>
+              <span className="relative sm:hidden">
+                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-orange-500">
+                  Zaw Myint
                 </span>
                 <span className="{` absolute -bottom-0 left-0 -top-1 inline-block bg-black w-full animate-type will-change`}"></span>
               </span>

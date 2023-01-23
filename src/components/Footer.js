@@ -6,13 +6,10 @@ import { SiGmail } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <Box
-      className=" bg-gradient-to-r from-gray-700 via-gray-600 to-gray-500 rounded opacity-80"
-      sx={{ color: "white" }}
-    >
+    <Box className=" bg-black bg-opacity-90" sx={{ color: "white" }}>
       <Box className=" text-center p-1 flex flex-col gap-2">
         <Typography variant="h4" className=" font-mono font-bold ">
-          Say <span className=" animate-pulse text-green-500">Hello 👋</span>
+          Say <span className=" animate-pulse text-gray-200">Hello 👋</span>
         </Typography>
         <Typography className=" font-mono text-lg">
           I am available for freelance projects, remote work or just discussing
