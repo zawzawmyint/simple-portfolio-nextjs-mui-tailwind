@@ -38,7 +38,7 @@ export default function BasicSpeedDial() {
     {
       icon: (
         <Link href={"https://github.com/zawzawmyint"}>
-          <GitHubIcon className="text-white shadow-2xl shadow-white " />
+          <GitHubIcon className=" text-indigo-300 shadow-2xl shadow-white " />
         </Link>
       ),
       name: "Github",

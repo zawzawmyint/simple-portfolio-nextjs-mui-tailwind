@@ -61,7 +61,7 @@ const AboutMeDetails = () => {
                 alt="Picture of the author"
                 width={100}
                 height={100}
-                className=" mx-auto transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300"
+                className=" mx-auto transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300 bg-white"
               />
             </Grid>
             <Grid item xs={6} md={4}>
@@ -142,7 +142,7 @@ const AboutMeDetails = () => {
                 alt="Picture of the author"
                 width={100}
                 height={100}
-                className=" mx-auto transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300"
+                className=" mx-auto transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300 bg-white"
               />
             </Grid>
             <Grid item xs={6} md={4}>
