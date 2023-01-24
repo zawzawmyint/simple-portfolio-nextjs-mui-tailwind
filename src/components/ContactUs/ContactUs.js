@@ -12,8 +12,39 @@ import React from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
+import { useState } from "react";
 
 const ContactUs = () => {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // let isValidForm = handleValidation();
+
+    const res = await fetch("/api/sendgrid", {
+      body: JSON.stringify({
+        email: email,
+        fullname: fullname,
+        subject: subject,
+        message: message,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const { error } = await res.json();
+    if (error) {
+      console.log(error);
+      return;
+    }
+    console.log(fullname, email, subject, message);
+  };
   return (
     <Box className="bg-black h-auto relative">
       <iframe
@@ -29,37 +60,52 @@ const ContactUs = () => {
       >
         <Typography
           variant="subtitle1"
-          className=" text-white m-3 font-bold text-lg"
+          className=" text-white font-bold text-lg"
+          sx={{ margin: 2 }}
         >
           Let's Keep In Touch
         </Typography>
         <Divider className=" bg-white w-60" />
         <CardContent className=" rounded-xl">
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6} className=" bg-gray-700">
+            <Grid
+              item
+              xs={12}
+              md={6}
+              className=" bg-gray-700"
+              sx={{ display: "flex", flexDirection: "column" }}
+            >
               <Typography variant="subtitle1" className="text-white">
                 Our Contacts
               </Typography>
               <Typography
                 variant="body2"
-                className=" text-white mt-10 flex justify-start items-end "
+                className=" text-white flex justify-start items-end "
+                sx={{ marginTop: 5 }}
               >
                 <LocationOnIcon fontSize="small" /> New Youk City, America
               </Typography>
               <Typography
                 variant="body2"
-                className=" text-white flex justify-start items-end mt-5"
+                className=" text-white flex justify-start items-end "
+                sx={{ marginTop: 3 }}
               >
                 <LocalPhoneIcon fontSize="small" /> 099876556
               </Typography>
               <Typography
                 variant="body2"
-                className=" text-white flex justify-start items-end my-5 "
+                className=" text-white flex justify-start items-end "
+                sx={{ marginY: 3 }}
               >
                 <EmailIcon fontSize="small" /> cuzawzawmyint@gmail.com
               </Typography>
             </Grid>
-            <Grid item xs={12} md={6} className=" bg-white rounded-lg">
+            <Grid
+              item
+              xs={12}
+              md={6}
+              className=" bg-white rounded-lg text-center ml-4 sm:ml-0 "
+            >
               <Typography
                 variant="subtitle1"
                 className=" text-black font-bold font-mono"
@@ -68,16 +114,18 @@ const ContactUs = () => {
               </Typography>
               <Box
                 sx={{
-                  width: 350,
-                  maxWidth: "100%",
+                  maxWidth: "95%",
                 }}
                 className="flex flex-col gap-3 my-5"
               >
                 <TextField
                   size="small"
                   fullWidth
-                  label="Your Name"
+                  label="Full Name"
                   id="yourname"
+                  value={fullname}
+                  onChange={(e) => setFullname(e.target.value)}
+                  required
                 />
                 <TextField
                   size="small"
@@ -85,18 +133,27 @@ const ContactUs = () => {
                   label="Email Address"
                   id="email"
                   sx={{ borderRadius: 150 }}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
                 <TextField
                   size="small"
                   fullWidth
-                  label="Whatsapp"
+                  label="Subject"
                   id="whatsapp"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  required
                 />
                 <TextField
                   fullWidth
                   rows="100"
                   label="Write Message"
                   id="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
                 />
               </Box>
               <Box m={2}>
@@ -104,6 +161,7 @@ const ContactUs = () => {
                   size="small"
                   variant="outlined"
                   className=" normal-case rounded-xl"
+                  onClick={handleSubmit}
                 >
                   Send
                 </Button>

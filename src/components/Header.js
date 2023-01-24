@@ -133,7 +133,12 @@ export const Header = () => {
                   <ListItem>
                     <ListItemButton
                       onClick={handleClose}
-                      className="justify-center font-mono"
+                      className=""
+                      sx={{
+                        justifyContent: "center",
+                        fontFamily: "monospace",
+                        fontSize: "20px",
+                      }}
                     >
                       <Link href="/">Home</Link>
                     </ListItemButton>
@@ -141,7 +146,11 @@ export const Header = () => {
                   <ListItem>
                     <ListItemButton
                       onClick={handleClose}
-                      className="justify-center font-mono"
+                      sx={{
+                        justifyContent: "center",
+                        fontFamily: "monospace",
+                        fontSize: "20px",
+                      }}
                     >
                       <Link href="/about">About me</Link>
                     </ListItemButton>
@@ -149,7 +158,11 @@ export const Header = () => {
                   <ListItem>
                     <ListItemButton
                       onClick={handleClose}
-                      className="justify-center font-mono"
+                      sx={{
+                        justifyContent: "center",
+                        fontFamily: "monospace",
+                        fontSize: "20px",
+                      }}
                     >
                       <Link href="/skills">Skills</Link>
                     </ListItemButton>
@@ -157,7 +170,11 @@ export const Header = () => {
                   <ListItem>
                     <ListItemButton
                       onClick={handleClose}
-                      className="justify-center font-mono"
+                      sx={{
+                        justifyContent: "center",
+                        fontFamily: "monospace",
+                        fontSize: "20px",
+                      }}
                     >
                       <Link href="/mywork">My Work</Link>
                     </ListItemButton>

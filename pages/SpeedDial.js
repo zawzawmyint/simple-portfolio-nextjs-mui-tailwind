@@ -52,7 +52,11 @@ export default function BasicSpeedDial() {
       name: "LinkIn",
     },
     {
-      icon: <EmailIcon onClick={sendMail} className="text-rose-400" />,
+      icon: (
+        <Link href={"/contactus"}>
+          <EmailIcon className="text-rose-400" />
+        </Link>
+      ),
       name: "Email",
     },
   ];
