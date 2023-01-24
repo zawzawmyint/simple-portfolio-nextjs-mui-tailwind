@@ -226,7 +226,13 @@ const TechSkills = () => {
             label={
               <Typography
                 variant="subtitle1"
-                className="text-sky-200 font-mono mb-5 font-bold text-2xl"
+                // className="text-sky-200 font-mono mb-5 font-bold text-2xl"
+                sx={{
+                  marginBottom: 5,
+                  fontFamily: "monospace",
+                  fontWeight: "bold",
+                  fontSize: "16px",
+                }}
               >
                 More
               </Typography>
