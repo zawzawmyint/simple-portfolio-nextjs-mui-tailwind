@@ -104,7 +104,8 @@ const ContactUs = () => {
               item
               xs={12}
               md={6}
-              className=" bg-white rounded-lg text-center ml-4 sm:ml-0 "
+              className=" bg-white rounded-lg text-center "
+              sx={{ marginLeft: { xs: 2, md: 0 } }}
             >
               <Typography
                 variant="subtitle1"
@@ -148,7 +149,8 @@ const ContactUs = () => {
                 />
                 <TextField
                   fullWidth
-                  rows="100"
+                  rows="3"
+                  multiline={true}
                   label="Write Message"
                   id="message"
                   value={message}
