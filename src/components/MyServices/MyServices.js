@@ -44,6 +44,7 @@ const MyServices = () => {
               <Typography
                 variant="body1"
                 className=" font-bold mt-2 text-sky-400 font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 Web App Design
               </Typography>
@@ -67,6 +68,7 @@ const MyServices = () => {
               <Typography
                 variant="body1"
                 className=" font-bold mt-2 text-sky-400 font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 Mobile App Design
               </Typography>
@@ -90,6 +92,7 @@ const MyServices = () => {
               <Typography
                 variant="body1"
                 className=" font-bold mt-2 text-sky-400 font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 UI/UX Design
               </Typography>
@@ -113,6 +116,7 @@ const MyServices = () => {
               <Typography
                 variant="body1"
                 className=" font-bold mt-2 text-sky-400 font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 Graphic Design
               </Typography>

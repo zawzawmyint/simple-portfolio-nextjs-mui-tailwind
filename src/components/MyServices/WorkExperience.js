@@ -77,7 +77,11 @@ const WorkExperience = () => {
                   onClick={() => handleCurrent(index)}
                   optional={
                     index === 2 ? (
-                      <Typography variant="caption" className=" text-white">
+                      <Typography
+                        variant="caption"
+                        className=" text-white"
+                        sx={{ fontFamily: "monospace" }}
+                      >
                         Present Working
                       </Typography>
                     ) : null
@@ -86,6 +90,7 @@ const WorkExperience = () => {
                   <Typography
                     variant="subtitle1"
                     className="  font-mono cursor-pointer text-green-400"
+                    sx={{ fontFamily: "monospace" }}
                   >
                     {step.role} at {step.company}
                   </Typography>
@@ -95,21 +100,28 @@ const WorkExperience = () => {
                     <Typography
                       variant="caption"
                       className=" text-gray-600 font-Josefin"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       {step.period}
                     </Typography>
                     <Typography
                       variant="subtitle1"
                       className="font-mono font-bold"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       {step.project}
                     </Typography>
-                    <Typography variant="body2" className="font-mono">
+                    <Typography
+                      variant="body2"
+                      className="font-mono"
+                      sx={{ fontFamily: "monospace" }}
+                    >
                       {step.tech}
                     </Typography>
                     <Typography
                       variant="body1"
                       className="font-mono tracking-wider"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       {step.description}
                     </Typography>
@@ -141,7 +153,7 @@ const WorkExperience = () => {
           {activeStep === steps.length && (
             <Button
               onClick={handleReset}
-              sx={{ mt: 1, mr: 1 }}
+              sx={{ mt: 1, mr: 1, fontFamily: "monospace" }}
               className=" font-Josefin font-bold normal-case text-green-300"
             >
               Review

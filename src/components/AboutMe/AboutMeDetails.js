@@ -21,12 +21,14 @@ const AboutMeDetails = () => {
           <Typography
             variant="h6"
             className="text-sky-200 font-bold font-Josefin"
+            sx={{ fontFamily: "monospace" }}
           >
             I believe in learning thru experience
           </Typography>
           <Typography
             variant="body1"
             className=" text-gray-300 sm:w-2/3 mt-5 font-Josefin"
+            sx={{ fontFamily: "monospace" }}
           >
             {" "}
             I am always ready to accept new challenges and push my limits. I
@@ -53,6 +55,7 @@ const AboutMeDetails = () => {
                 width={100}
                 height={100}
                 className=" mx-auto transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300"
+                sx={{ fontFamily: "monospace" }}
               />
             </Grid>
             <Grid item xs={6} md={4}>
@@ -101,12 +104,14 @@ const AboutMeDetails = () => {
           <Typography
             variant="h6"
             className="text-sky-200 font-bold font-Josefin"
+            sx={{ fontFamily: "monospace" }}
           >
             I do much more than just work
           </Typography>
           <Typography
             variant="body1"
             className=" text-gray-300 sm:w-2/3 mt-5 font-Josefin"
+            sx={{ fontFamily: "monospace" }}
           >
             {" "}
             Work hard and party harder, this is what I follow. I always try to

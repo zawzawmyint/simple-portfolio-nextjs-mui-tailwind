@@ -228,7 +228,7 @@ const TechSkills = () => {
                 variant="subtitle1"
                 // className="text-sky-200 font-mono mb-5 font-bold text-2xl"
                 sx={{
-                  marginBottom: 5,
+                  marginBottom: 3,
                   fontFamily: "monospace",
                   fontWeight: "bold",
                   fontSize: "16px",

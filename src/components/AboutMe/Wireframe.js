@@ -98,12 +98,14 @@ const Wireframe = (props) => {
             <Typography
               variant="h5"
               className=" font-bold text-cyan-300 font-Josefin"
+              sx={{ fontFamily: "monospace" }}
             >
               About Me
             </Typography>
             <Typography
               variant="h6"
               className="text-sky-200 font-bold font-Josefin"
+              sx={{ fontFamily: "monospace" }}
             >
               Hello!, Nice to meet you
             </Typography>
@@ -112,6 +114,7 @@ const Wireframe = (props) => {
                 variant="body1"
                 className="first-letter:ml-3 first-line:tracking-widest
                 first-letter:text-3xl text-gray-300 sm:w-3/4  font-Josefin tracking-wider "
+                sx={{ fontFamily: "monospace" }}
               >
                 I'm Zaw Zaw Myint, and I graduated from the University of
                 Computer Studies in 2019 with a degree in Computer Science. My
@@ -131,6 +134,7 @@ const Wireframe = (props) => {
                     <Typography
                       variant="subtitle1"
                       className="text-white font-mono"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       Details
                     </Typography>
@@ -143,12 +147,14 @@ const Wireframe = (props) => {
                     <Typography
                       variant="body1"
                       className=" text-sky-200 font-semibold font-mono"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       Name:
                     </Typography>
                     <Typography
                       variant="body1"
                       className=" text-gray-200 tracking-wider font-mono font-bold"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       Zaw Zaw Myint (Flez)
                     </Typography>
@@ -157,12 +163,14 @@ const Wireframe = (props) => {
                     <Typography
                       variant="body1"
                       className="font-semibold text-sky-200 font-mono"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       Date of Birth:
                     </Typography>
                     <Typography
                       variant="body1"
                       className=" text-gray-200 tracking-wider font-mono"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       22/04/97
                     </Typography>
@@ -171,12 +179,14 @@ const Wireframe = (props) => {
                     <Typography
                       variant="body1"
                       className="font-semibold text-sky-200 font-mono"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       Address:
                     </Typography>
                     <Typography
                       variant="body1"
                       className=" text-gray-200 tracking-wider font-mono"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       Yangon
                     </Typography>
@@ -185,12 +195,14 @@ const Wireframe = (props) => {
                     <Typography
                       variant="body1"
                       className="font-semibold text-sky-200 font-mono"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       Email:
                     </Typography>
                     <Typography
                       variant="body1"
                       className="break-all text-gray-200 tracking-widest font-mono "
+                      sx={{ fontFamily: "monospace" }}
                     >
                       cuzawzawmyint@gmail.com
                     </Typography>
@@ -199,12 +211,14 @@ const Wireframe = (props) => {
                     <Typography
                       variant="body1"
                       className="font-semibold text-sky-200 font-mono "
+                      sx={{ fontFamily: "monospace" }}
                     >
                       Phone:
                     </Typography>
                     <Typography
                       variant="body1"
                       className=" text-gray-200 tracking-wider font-mono"
+                      sx={{ fontFamily: "monospace" }}
                     >
                       09-978205997
                     </Typography>
@@ -217,7 +231,12 @@ const Wireframe = (props) => {
                 variant="outlined"
                 className="normal-case rounded-3xl text-amber-300 transition ease-in delay-75 hover:-translate-y-1 hover:scale-110 duration-300 font-mono"
               >
-                <Link href="/files/ZawZawMyintCV.pdf" locale={false} download>
+                <Link
+                  href="/files/ZawZawMyintCV.pdf"
+                  locale={false}
+                  download
+                  sx={{ fontFamily: "monospace" }}
+                >
                   Download CV
                 </Link>
               </Button>

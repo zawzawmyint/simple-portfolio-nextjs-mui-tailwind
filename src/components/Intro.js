@@ -23,7 +23,11 @@ const Intro = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Box className=" flex flex-col gap-2 sm:mx-32 mx-10  my-10">
-            <Typography variant="h5" className="font-bold text-white font-mono">
+            <Typography
+              variant="h5"
+              className="font-bold text-white font-mono"
+              sx={{ fontFamily: "monospace" }}
+            >
               Hi,
             </Typography>
             <Typography
@@ -32,13 +36,19 @@ const Intro = () => {
             >
               I&apos;m{" "}
               <span className="relative hidden sm:inline-block">
-                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-orange-500">
+                <span
+                  className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-orange-500"
+                  sx={{ fontFamily: "monospace" }}
+                >
                   Zaw Zaw Myint
                 </span>
                 <span className="{` absolute -bottom-0 left-0 -top-1 inline-block bg-black w-full animate-type will-change`}"></span>
               </span>
               <span className="relative sm:hidden">
-                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-orange-500">
+                <span
+                  className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-orange-500"
+                  sx={{ fontFamily: "monospace" }}
+                >
                   Zaw Myint
                 </span>
                 <span className="{` absolute -bottom-0 left-0 -top-1 inline-block bg-black w-full animate-type will-change`}"></span>
@@ -48,6 +58,7 @@ const Intro = () => {
               <span
                 variant="subtitle1"
                 className="font-bold ease-in duration-300 normal-case text-violet-50 tracking-wide hover:text-violet-100 font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 Front
               </span>{" "}
@@ -57,6 +68,7 @@ const Intro = () => {
               mb={2}
               variant="subtitle1"
               className=" ease-in duration-300 normal-case text-sky-200 text-xl  font-bold tracking-wide hover:tracking-widest hover:text-violet-100 font-mono"
+              sx={{ fontFamily: "monospace" }}
             >
               CSS / Javascript / React
             </Typography>
@@ -64,6 +76,7 @@ const Intro = () => {
               <Button
                 variant="outlined"
                 className=" animate-bounce rounded-full  ease-in duration-300 normal-case text-amber-700  cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-orange-700 font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 Hire me
               </Button>
@@ -71,7 +84,9 @@ const Intro = () => {
                 variant="outlined"
                 className="ease-in duration-300 normal-case rounded-full text-sky-100  cursor-pointer  font-bold tracking-wide hover:tracking-widest hover:text-sky-400  font-mono"
               >
-                <Link href={"/contactus"}>Contact me</Link>
+                <Link href={"/contactus"} sx={{ fontFamily: "monospace" }}>
+                  Contact me
+                </Link>
               </Button>
             </Stack>
             <Stack direction="row" spacing={3} mt={1}>

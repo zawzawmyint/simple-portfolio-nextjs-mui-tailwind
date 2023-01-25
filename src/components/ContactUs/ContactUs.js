@@ -61,7 +61,7 @@ const ContactUs = () => {
         <Typography
           variant="subtitle1"
           className=" text-white font-bold text-lg"
-          sx={{ margin: 2 }}
+          sx={{ margin: 2, fontFamily: "monospace" }}
         >
           Let's Keep In Touch
         </Typography>
@@ -75,27 +75,31 @@ const ContactUs = () => {
               className=" bg-gray-700"
               sx={{ display: "flex", flexDirection: "column" }}
             >
-              <Typography variant="subtitle1" className="text-white">
+              <Typography
+                variant="subtitle1"
+                className="text-white"
+                sx={{ fontFamily: "monospace" }}
+              >
                 Our Contacts
               </Typography>
               <Typography
                 variant="body2"
                 className=" text-white flex justify-start items-end "
-                sx={{ marginTop: 5 }}
+                sx={{ marginTop: 5, fontFamily: "monospace" }}
               >
                 <LocationOnIcon fontSize="small" /> New Youk City, America
               </Typography>
               <Typography
                 variant="body2"
                 className=" text-white flex justify-start items-end "
-                sx={{ marginTop: 3 }}
+                sx={{ marginTop: 3, fontFamily: "monospace" }}
               >
                 <LocalPhoneIcon fontSize="small" /> 099876556
               </Typography>
               <Typography
                 variant="body2"
                 className=" text-white flex justify-start items-end "
-                sx={{ marginY: 3 }}
+                sx={{ marginY: 3, fontFamily: "monospace" }}
               >
                 <EmailIcon fontSize="small" /> cuzawzawmyint@gmail.com
               </Typography>
@@ -110,6 +114,7 @@ const ContactUs = () => {
               <Typography
                 variant="subtitle1"
                 className=" text-black font-bold font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 Send us a message
               </Typography>
@@ -163,6 +168,7 @@ const ContactUs = () => {
                   size="small"
                   variant="outlined"
                   className=" normal-case rounded-xl"
+                  sx={{ fontFamily: "monospace" }}
                   onClick={handleSubmit}
                 >
                   Send

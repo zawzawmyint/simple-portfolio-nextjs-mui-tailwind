@@ -82,7 +82,11 @@ const MySkills = () => {
   return (
     <Box className="bg-black p-10">
       <Container maxWidth="lg" className="">
-        <Typography variant="h5" className=" font-bold text-cyan-100 font-mono">
+        <Typography
+          variant="h5"
+          className=" font-bold text-cyan-100 font-mono"
+          sx={{ fontFamily: "monospace" }}
+        >
           My Skills
         </Typography>
         <Grid container spacing={2} mt={4}>
@@ -97,6 +101,7 @@ const MySkills = () => {
               <Typography
                 variant="body1"
                 className=" font-bold mt-2 text-sky-400 font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 Html
               </Typography>
@@ -114,6 +119,7 @@ const MySkills = () => {
               <Typography
                 variant="body1"
                 className=" font-bold mt-2 text-sky-400 font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 CSS
               </Typography>
@@ -131,6 +137,7 @@ const MySkills = () => {
               <Typography
                 variant="body1"
                 className=" font-bold mt-2 text-sky-400 font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 JavaScript
               </Typography>
@@ -148,6 +155,7 @@ const MySkills = () => {
               <Typography
                 variant="body1"
                 className=" font-bold mt-2 text-sky-400 font-mono"
+                sx={{ fontFamily: "monospace" }}
               >
                 React
               </Typography>
