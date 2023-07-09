@@ -31,16 +31,22 @@ export const Header = () => {
 
   return (
     <Box
-      className=" bg-black bg-opacity-90 shadow-cyan-100 border-1"
-      sx={{ color: "white" }}
+      className=" bg-gray-800  shadow-cyan-100 border-1 "
+      sx={{
+        color: "white",
+        width: "100%",
+        height: "100",
+        position: "sticky",
+        top: "0",
+        zIndex: 99,
+      }}
     >
       {!fullScreen && (
         <Stack
-          mx={10}
-          p={3}
+          mx={15}
+          p={2}
           direction="row"
-          spacing={75}
-          className=" items-center"
+          className=" items-center flex justify-between"
         >
           <Typography
             variant="subtitle2"
