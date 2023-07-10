@@ -82,11 +82,7 @@ const MySkills = () => {
   return (
     <Box className="bg-black p-10">
       <Container maxWidth="lg" className="">
-        <Typography
-          variant="h5"
-          className=" font-bold text-cyan-100 font-mono"
-          sx={{ fontFamily: "monospace" }}
-        >
+        <Typography variant="h5" className=" font-bold text-cyan-100">
           My Skills
         </Typography>
         <Grid container spacing={2} mt={4}>

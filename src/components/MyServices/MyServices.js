@@ -20,10 +20,7 @@ const MyServices = () => {
   return (
     <Box className="bg-black p-10">
       <Container maxWidth="lg" className="">
-        <Typography
-          variant="h5"
-          className=" font-bold text-cyan-100 font-Josefin"
-        >
+        <Typography variant="h5" className=" font-bold text-cyan-100">
           My Services
         </Typography>
         <Grid container spacing={5} mt={0}>

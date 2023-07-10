@@ -50,43 +50,50 @@ export const Header = () => {
         >
           <Typography
             variant="subtitle2"
-            className="relative ease-in duration-300 text-amber-500 uppercase cursor-pointer  font-bold text-xl tracking-wide hover:tracking-widest hover:text-orange-600 font-mono animate-pulse"
+            className="relative ease-in duration-300  uppercase cursor-pointer  font-bold text-xl tracking-wide hover:tracking-widest  font-mono animate-pulse"
             sx={{ fontFamily: "monospace" }}
           >
             <Link href={"/"}>Portfolio</Link>
           </Typography>
           <Stack
             direction="row"
-            spacing={3}
-            className=" hidden sm:flex p-2 border-2 border-slate-800 rounded-full shadow-md shadow-orange-500 "
+            spacing={2}
+            className=" hidden sm:flex p-2 border-2 border-slate-800 rounded-lg shadow-sm shadow-orange-50 "
           >
             <Typography
               variant="subtitle2"
               className="ease-in normal-case duration-300  cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black font-mono"
               sx={{ fontFamily: "monospace" }}
             >
-              <Link href={"/"}>Home</Link>
+              <Link href={"/"}>HOME</Link>
             </Typography>
             <Typography
               variant="subtitle2"
               className="ease-in duration-300 normal-case cursor-pointer  font-bold tracking-wide hover:border hover:tracking-widest px-1 rounded-lg  hover:bg-gray-50 hover:text-black font-mono"
               sx={{ fontFamily: "monospace" }}
             >
-              <Link href={"/about"}>About Me</Link>
+              <Link href={"/about"}>ABOUT</Link>
             </Typography>
             <Typography
               variant="subtitle2"
               className="ease-in duration-300 normal-case cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black font-mono"
               sx={{ fontFamily: "monospace" }}
             >
-              <Link href={"/skills"}>Skills</Link>
+              <Link href={"/skills"}>SKILLS</Link>
             </Typography>
             <Typography
               variant="subtitle2"
               className="ease-in duration-300 normal-case cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black font-mono"
               sx={{ fontFamily: "monospace" }}
             >
-              <Link href={"/mywork"}>My Work</Link>
+              <Link href={"/mywork"}>MY WORK</Link>
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              className="ease-in duration-300 normal-case cursor-pointer  font-bold tracking-wider hover:border rounded-lg px-1 hover:tracking-widest hover:bg-gray-50 hover:text-black font-mono"
+              sx={{ fontFamily: "monospace" }}
+            >
+              <Link href={"/contactus"}>CONTACT</Link>
             </Typography>
           </Stack>
         </Stack>

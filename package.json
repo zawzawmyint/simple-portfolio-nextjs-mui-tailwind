@@ -17,6 +17,7 @@
     "@sendgrid/mail": "^7.7.0",
     "axios": "^1.2.3",
     "emailjs": "^4.0.1",
+    "framer-motion": "^10.12.18",
     "gotham-fonts": "^1.0.3",
     "next": "13.1.2",
     "nprogress": "^0.2.0",

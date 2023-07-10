@@ -17,6 +17,7 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import { styled } from "@mui/material/styles";
+import { motion } from "framer-motion";
 
 const Android12Switch = styled(Switch)(({ theme }) => ({
   padding: 8,
@@ -96,31 +97,23 @@ const Wireframe = (props) => {
         <Grid item xs={12} md={6}>
           <Box className=" flex flex-col gap-3">
             <Typography
-              variant="h5"
-              className=" font-bold text-cyan-300 font-Josefin"
-              sx={{ fontFamily: "monospace" }}
-            >
-              About Me
-            </Typography>
-            <Typography
               variant="h6"
-              className="text-sky-200 font-bold font-Josefin"
-              sx={{ fontFamily: "monospace" }}
+              className="text-sky-200 font-bold "
+              // sx={{ fontFamily: "monospace" }}
             >
               Hello!, Nice to meet you
             </Typography>
             <CardContent className=" shadow-xl bg-gray-900 rounded-lg">
               <Typography
                 variant="body1"
-                className="first-letter:ml-3 first-line:tracking-widest
-                first-letter:text-3xl text-gray-300 sm:w-3/4  font-Josefin tracking-wider "
-                sx={{ fontFamily: "monospace" }}
+                className="first-letter:ml-3 first-line:tracking-wider
+                first-letter:text-3xl text-gray-300 sm:w-full tracking-wider "
               >
-                I'm Zaw Zaw Myint, and I graduated from the University of
-                Computer Studies in 2019 with a degree in Computer Science. My
-                interests are in Front End Engineering, and I love to create
-                beautiful and performant products with delightful user
-                experiences.
+                I'm Zaw Zaw Myint, and I had graduated from the University of
+                Computer Studies(Monywa) since 2019 with a degree in Computer
+                Science(CS). My interests are in Front End Engineering, and I
+                love to create beautiful and performant products with delightful
+                user experiences.
               </Typography>
               <FormGroup>
                 <FormControlLabel
@@ -134,7 +127,7 @@ const Wireframe = (props) => {
                     <Typography
                       variant="subtitle1"
                       className="text-white font-mono"
-                      sx={{ fontFamily: "monospace" }}
+                      // sx={{ fontFamily: "monospace" }}
                     >
                       Details
                     </Typography>
@@ -143,99 +136,96 @@ const Wireframe = (props) => {
               </FormGroup>
               {details && (
                 <Box className=" flex flex-col gap-3">
-                  <Stack direction="row" spacing={15}>
+                  {/* <Stack direction="row" spacing={15}> */}
+                  <Box sx={{ display: "flex", gap: 2 }}>
                     <Typography
                       variant="body1"
                       className=" text-sky-200 font-semibold font-mono"
-                      sx={{ fontFamily: "monospace" }}
+                      sx={{ flexBasis: "30%" }}
                     >
                       Name:
                     </Typography>
                     <Typography
                       variant="body1"
-                      className=" text-gray-200 tracking-wider font-mono font-bold"
-                      sx={{ fontFamily: "monospace" }}
+                      className=" text-gray-300 tracking-wider"
                     >
                       Zaw Zaw Myint (Flez)
                     </Typography>
-                  </Stack>
-                  <Stack direction="row" spacing={10} className="sr-only">
+                  </Box>
+                  {/* </Box> */}
+                  <Box sx={{ display: "flex", gap: 2 }}>
                     <Typography
                       variant="body1"
                       className="font-semibold text-sky-200 font-mono"
-                      sx={{ fontFamily: "monospace" }}
+                      sx={{ flexBasis: "30%" }}
                     >
                       Date of Birth:
                     </Typography>
                     <Typography
                       variant="body1"
-                      className=" text-gray-200 tracking-wider font-mono"
-                      sx={{ fontFamily: "monospace" }}
+                      className=" text-gray-300 tracking-wider font-mono"
                     >
                       22/04/97
                     </Typography>
-                  </Stack>
-                  <Stack direction="row" spacing={12} className="">
+                  </Box>
+                  <Box sx={{ display: "flex", gap: 2 }}>
                     <Typography
                       variant="body1"
                       className="font-semibold text-sky-200 font-mono"
-                      sx={{ fontFamily: "monospace" }}
+                      sx={{ flexBasis: "30%" }}
                     >
                       Address:
                     </Typography>
                     <Typography
                       variant="body1"
-                      className=" text-gray-200 tracking-wider font-mono"
-                      sx={{ fontFamily: "monospace" }}
+                      className=" text-gray-300 tracking-wider font-mono"
                     >
                       Yangon
                     </Typography>
-                  </Stack>
-                  <Stack direction="row" spacing={14}>
+                  </Box>
+                  <Box sx={{ display: "flex", gap: 2 }}>
                     <Typography
                       variant="body1"
                       className="font-semibold text-sky-200 font-mono"
-                      sx={{ fontFamily: "monospace" }}
+                      sx={{ flexBasis: "30%" }}
                     >
                       Email:
                     </Typography>
                     <Typography
                       variant="body1"
-                      className="break-all text-gray-200 tracking-widest font-mono "
-                      sx={{ fontFamily: "monospace" }}
+                      className="break-all text-gray-300 tracking-widest font-mono "
                     >
                       cuzawzawmyint@gmail.com
                     </Typography>
-                  </Stack>
-                  <Stack direction="row" spacing={14}>
+                  </Box>
+                  <Box sx={{ display: "flex", gap: 2 }}>
                     <Typography
                       variant="body1"
                       className="font-semibold text-sky-200 font-mono "
-                      sx={{ fontFamily: "monospace" }}
+                      sx={{ flexBasis: "30%" }}
                     >
                       Phone:
                     </Typography>
                     <Typography
                       variant="body1"
-                      className=" text-gray-200 tracking-wider font-mono"
-                      sx={{ fontFamily: "monospace" }}
+                      className=" text-gray-300 tracking-wider font-mono"
                     >
                       09-978205997
                     </Typography>
-                  </Stack>
+                  </Box>
                 </Box>
               )}
             </CardContent>
             <Box>
               <Button
                 variant="outlined"
-                className="normal-case rounded-3xl text-amber-300 transition ease-in delay-75 hover:-translate-y-1 hover:scale-110 duration-300 font-mono"
+                className="normal-case rounded-3xl  transition ease-in delay-75 hover:-translate-y-1 hover:scale-110 duration-300 font-mono"
               >
                 <Link
                   href="/files/ZawZawMyintCV.pdf"
                   locale={false}
                   download
-                  sx={{ fontFamily: "monospace" }}
+                  // sx={{ fontFamily: "monospace" }}
                 >
                   Download CV
                 </Link>

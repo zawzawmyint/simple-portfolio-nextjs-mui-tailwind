@@ -8,7 +8,7 @@ import ShareIcon from "@mui/icons-material/Share";
 import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import FaceIcon from "@mui/icons-material/Face";
+import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import Link from "next/link";
 import axios from "axios";
 
@@ -61,7 +61,15 @@ export default function BasicSpeedDial() {
     },
   ];
   return (
-    <Box sx={{ transform: "translateZ(0px)", flexGrow: 1 }}>
+    <Box
+      sx={{
+        transform: "translateZ(0px)",
+        flexGrow: 1,
+        position: "sticky",
+        bottom: 40,
+        zIndex: 40,
+      }}
+    >
       <SpeedDial
         ariaLabel="SpeedDial basic example"
         sx={{
@@ -70,7 +78,10 @@ export default function BasicSpeedDial() {
           right: 16,
         }}
         icon={
-          <FaceIcon className="rounded-full bg-white text-black text-5xl animate-pulse" />
+          <EmojiPeopleIcon
+            color="primary"
+            className="rounded-full bg-slate-400 p-2 text-primary text-5xl animate-pulse"
+          />
         }
       >
         {actions.map((action) => (

@@ -48,15 +48,16 @@ const ContactUs = () => {
   return (
     <Box className="bg-black h-auto relative">
       <iframe
-        src="https://maps.google.com/maps?q=Myanmar%20Web%20creator&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.0316259985875!2d96.19785797481637!3d16.824787083969614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19328140c51cb%3A0x4f57521ebec58bf2!2sThingangyun%20Township%2C%20Yangon!5e0!3m2!1sen!2smm!4v1688891086056!5m2!1sen!2smm"
         id="gmap_canvas"
         className="h-[500px] w-full shadow-lg rounded border-none"
       ></iframe>
+      {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.0316259985875!2d96.19785797481637!3d16.824787083969614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19328140c51cb%3A0x4f57521ebec58bf2!2sThingangyun%20Township%2C%20Yangon!5e0!3m2!1sen!2smm!4v1688891086056!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
       <Box className="  h-96"></Box>
       <Box className="  h-28"></Box>
       <Container
         maxWidth="md"
-        className=" bg-gray-700 rounded-xl absolute top-64 sm:top-96 sm:left-52"
+        className=" bg-gray-700 rounded-xl absolute top-64 sm:top-96 md:left-[20%]"
       >
         <Typography
           variant="subtitle1"
@@ -80,21 +81,22 @@ const ContactUs = () => {
                 className="text-white"
                 sx={{ fontFamily: "monospace" }}
               >
-                Our Contacts
+                My Contacts
               </Typography>
               <Typography
                 variant="body2"
                 className=" text-white flex justify-start items-end "
                 sx={{ marginTop: 5, fontFamily: "monospace" }}
               >
-                <LocationOnIcon fontSize="small" /> New Youk City, America
+                <LocationOnIcon fontSize="small" /> Thingangyun City, Yangon,
+                Myanmar
               </Typography>
               <Typography
                 variant="body2"
                 className=" text-white flex justify-start items-end "
                 sx={{ marginTop: 3, fontFamily: "monospace" }}
               >
-                <LocalPhoneIcon fontSize="small" /> 099876556
+                <LocalPhoneIcon fontSize="small" /> 09-978205997
               </Typography>
               <Typography
                 variant="body2"

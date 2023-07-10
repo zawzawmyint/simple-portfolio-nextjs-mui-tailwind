@@ -18,18 +18,10 @@ const AboutMeDetails = () => {
     <Box className="mx-auto bg-black text-black h-auto  p-10">
       <Grid container spacing={2} mt={5}>
         <Grid item xs={12} md={4}>
-          <Typography
-            variant="h6"
-            className="text-sky-200 font-bold font-Josefin"
-            sx={{ fontFamily: "monospace" }}
-          >
+          <Typography variant="h6" className="text-gray-300 font-bold">
             I believe in learning thru experience
           </Typography>
-          <Typography
-            variant="body1"
-            className=" text-gray-300 sm:w-2/3 mt-5 font-Josefin"
-            sx={{ fontFamily: "monospace" }}
-          >
+          <Typography variant="body1" className=" text-gray-300 sm:w-2/3 mt-5 ">
             {" "}
             I am always ready to accept new challenges and push my limits. I
             have worked from nascent startup to companies and believe in
@@ -101,18 +93,10 @@ const AboutMeDetails = () => {
 
       <Grid container spacing={2} mt={5}>
         <Grid item xs={12} md={4}>
-          <Typography
-            variant="h6"
-            className="text-sky-200 font-bold font-Josefin"
-            sx={{ fontFamily: "monospace" }}
-          >
+          <Typography variant="h6" className="text-gray-300 font-bold">
             I do much more than just work
           </Typography>
-          <Typography
-            variant="body1"
-            className=" text-gray-300 sm:w-2/3 mt-5 font-Josefin"
-            sx={{ fontFamily: "monospace" }}
-          >
+          <Typography variant="body1" className=" text-gray-300 sm:w-2/3 mt-5">
             {" "}
             Work hard and party harder, this is what I follow. I always try to
             enjoy life its fullest, when I am not designing you can find me
