@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-https://simple-protfolio-nextjs-mui-tailwind.vercel.app/
+#https://zawzawmyint-portfolio.vercel.app/
 
 First, run the development server:
 
